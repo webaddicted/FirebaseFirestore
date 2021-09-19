@@ -20,21 +20,21 @@ Base architecture already created in this repo. This repo contain following comp
 
 ## Login Module
 
-<img src="https://github.com/webaddicted/NewsPost/raw/main/screenshot/login.jpg" height="500"> 
+<img src="https://github.com/webaddicted/FirebaseFirestore/raw/main/screenshot/login.jpg" height="500">
 
 
 ## Home Module
 
-<img src="https://github.com/webaddicted/NewsPost/raw/main/screenshot/home.jpg" height="500"> 
+<img src="https://github.com/webaddicted/FirebaseFirestore/raw/main/screenshot/home.jpg" height="500">
 
 
 ## Firebase Firebase Console 1
 
-<img src="https://github.com/webaddicted/NewsPost/raw/main/screenshot/fcm1.jpg" height="500">
+<img src="https://github.com/webaddicted/FirebaseFirestore/raw/main/screenshot/fcm1.jpg" height="500">
 
 ## Firebase Firebase Console 2
 
-<img src="https://github.com/webaddicted/NewsPost/raw/main/screenshot/fcm2.jpg" height="500">
+<img src="https://github.com/webaddicted/FirebaseFirestore/raw/main/screenshot/fcm2.jpg" height="500">
 
 
 ## LICENSE
