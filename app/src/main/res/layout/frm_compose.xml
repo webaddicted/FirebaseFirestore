@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/wrapper_incident_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_incident_date"
+                        style="@style/EdittextBlack"
+                        android:drawableRight="@drawable/ic_arrow_down"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/select_incident_date"
+                        android:inputType="textCapSentences"
+                        android:longClickable="false" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/wrapper_incident_brif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_incident_brif"
+                        style="@style/EdittextBlack"
+                        android:gravity="start"
+                        android:hint="@string/incident_brief"
+                        android:inputType="textMultiLine"
+                        android:maxHeight="@dimen/_170sdp"
+                        android:maxLength="20000"
+                        android:minHeight="@dimen/_70sdp"
+                        android:scrollbars="vertical"
+                        android:singleLine="false" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/wrapper_action_token"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_action_token"
+                        style="@style/EdittextBlack"
+                        android:gravity="start"
+                        android:hint="@string/select_action_token"
+                        android:inputType="textMultiLine"
+                        android:maxHeight="@dimen/_170sdp"
+                        android:maxLength="20000"
+                        android:minHeight="@dimen/_70sdp"
+                        android:scrollbars="vertical"
+                        android:singleLine="false" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/wrapper_other_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_other_info"
+                        style="@style/EdittextBlack"
+                        android:gravity="start"
+                        android:hint="@string/other_info"
+                        android:inputType="textMultiLine"
+                        android:maxHeight="@dimen/_170sdp"
+                        android:maxLength="20000"
+                        android:minHeight="@dimen/_70sdp"
+                        android:scrollbars="vertical"
+                        android:singleLine="false" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/wrapper_stand1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_stand1"
+                        style="@style/EdittextBlack"
+                        android:drawableRight="@drawable/ic_arrow_down"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/select_stand1"
+                        android:inputType="textCapSentences"
+                        android:longClickable="false" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/wrapper_stand2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_stand2"
+                        style="@style/EdittextBlack"
+                        android:drawableRight="@drawable/ic_arrow_down"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/select_stand2"
+                        android:inputType="textCapSentences"
+                        android:longClickable="false" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/wrapper_stand3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_stand3"
+                        style="@style/EdittextBlack"
+                        android:drawableRight="@drawable/ic_arrow_down"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/select_stand3"
+                        android:inputType="textCapSentences"
+                        android:longClickable="false" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/wrapper_stand4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_stand4"
+                        style="@style/EdittextBlack"
+                        android:drawableRight="@drawable/ic_arrow_down"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/select_stand4"
+                        android:inputType="textCapSentences"
+                        android:longClickable="false" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/wrapper_stand5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_stand5"
+                        style="@style/EdittextBlack"
+                        android:drawableRight="@drawable/ic_arrow_down"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/select_stand5"
+                        android:inputType="textCapSentences"
+                        android:longClickable="false" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    style="@style/Button"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+
+                    android:text="@string/submit" />
+
+                <TextView
+                    android:id="@+id/txt_save_draft"
+                    style="@style/txt_black_normal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/save_draft"
+                    android:textSize="@dimen/_17sdp" />
+
+                <View
+                    style="@style/Separator_View"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_50sdp" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

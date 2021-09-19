@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/txt_black_normal"
+                        android:text="@string/incident_date" />
+
+                    <TextView
+                        android:id="@+id/txt_incident_date"
+                        style="@style/txt_gray_small"
+                        android:textSize="@dimen/_13sdp" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/txt_black_normal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/action_token" />
+
+                <TextView
+                    android:id="@+id/txt_action_token"
+                    style="@style/txt_gray_small"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/txt_lab_incident"
+                    style="@style/txt_black_normal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/incident" />
+
+                <TextView
+                    android:id="@+id/txt_incident"
+                    style="@style/txt_gray_small"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/txt_lab_other"
+                    style="@style/txt_black_normal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/other_info" />
+
+                <TextView
+                    android:id="@+id/txt_other_info"
+                    style="@style/txt_gray_small"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/txt_lab_tag1"
+                    style="@style/txt_black_normal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/select_stand1" />
+
+                <TextView
+                    android:id="@+id/txt_tag1"
+                    style="@style/txt_gray_small"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/txt_lab_tag2"
+                    style="@style/txt_black_normal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/select_stand2" />
+
+                <TextView
+                    android:id="@+id/txt_tag2"
+                    style="@style/txt_gray_small"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/txt_lab_tag3"
+                    style="@style/txt_black_normal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/select_stand3" />
+
+                <TextView
+                    android:id="@+id/txt_tag3"
+                    style="@style/txt_gray_small"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/txt_lab_tag4"
+                    style="@style/txt_black_normal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/select_stand4" />
+
+                <TextView
+                    android:id="@+id/txt_tag4"
+                    style="@style/txt_gray_small"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/txt_lab_tag5"
+                    style="@style/txt_black_normal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/select_stand5" />
+
+                <TextView
+                    android:id="@+id/txt_tag5"
+                    style="@style/txt_gray_small"
+                    android:textSize="@dimen/_13sdp" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

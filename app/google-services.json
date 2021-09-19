@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1060071453555",
+    "firebase_url": "https://quickinfo-9c4b1.firebaseio.com",
+    "project_id": "quickinfo-9c4b1",
+    "storage_bucket": "quickinfo-9c4b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060071453555:android:6325b76f0f7c4e1ff44b06",
+        "android_client_info": {
+          "package_name": "com.nikvik.quickinfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1060071453555-vo3ftq080l12m9bs75s1n3sonhvh75hc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwb9CHcqr3qZ-benvSwiZbwoCSIFgMAdw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060071453555-vo3ftq080l12m9bs75s1n3sonhvh75hc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

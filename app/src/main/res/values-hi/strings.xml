@@ -1,0 +1,66 @@
+<!--Japanese
+
+    Code: ja. Folder name: values-ja-->
+<resources>
+  <string name="app_name">QuickInfo</string>
+  <string name="yes">हाँ</string>
+  <string name="no">नहीं</string>
+  <string name="ok">ठीक है</string>
+  <string name="cancel">रद्द करना</string>
+  <string name="no_network_msg"><![CDATA[कृपया अपना इंटरनेट कनेक्शन जांचें और पुनः प्रयास करें]]></string>
+  <string name="please_wait">कृपया प्रतीक्षा करें</string>
+  <string name="loading">लोड हो रहा है...</string>
+  <string name="something_went_wrong">कुछ गलत हो गया। कृपया पुन: प्रयास करें</string>
+  <string name="txt_no_data_found">कोई डेटा नहीं मिला</string>
+  <string name="no_internet_connection">कोई इंटरनेट कनेक्शन नहीं</string>
+  <string name="back_online">ऑनलाइन वापस</string>
+  <string name="enter_mobile_no">Mobile number can\'t blank</string>
+  <string name="enter_valid_mobile_no">Enter valid mobile no</string>
+  <string name="welcome">Welcome</string>
+  <string name="signin_to_start">Sign in to continue</string>
+  <string name="mobile_no">Mobile no</string>
+  <string name="password">Password</string>
+  <string name="login">Login</string>
+  <string name="error_uppercase_pattern">Password must have atleast one uppercase character !!</string>
+  <string name="error_lowercase_pattern">Password must have atleast one lowercase character !!</string>
+  <string name="error_digit_pattern">Password must have atleast one digit character !!</string>
+  <string name="enter_passowrd">Enter password</string>
+  <string name="password_length">Check password length</string>
+  <string name="compose">लिखें</string>
+  <string name="draft">प्रारूप</string>
+  <string name="msg_log">संदेश लॉग</string>
+  <string name="setting">स्थापना</string>
+  <string name="select_desig">पदनाम का चयन करें</string>
+  <string name="select_district">जिले का चयन करें</string>
+  <string name="select_unit">इकाई (PS / OP आदि) का चयन करें</string>
+  <string name="select_lang">भाषा का चयन करें</string>
+  <string name="select_incident_date">घटना दिनांक का चयन करें</string>
+  <string name="select_action_token">कार्रवाई टोकन</string>
+  <string name="other_info">अन्य सूचना</string>
+  <string name="select_stand1">स्टैंड -1</string>
+  <string name="select_stand2">स्टैंड -2</string>
+  <string name="select_stand3">स्टैंड -3</string>
+  <string name="select_stand4">स्टैंड -4</string>
+  <string name="select_stand5">स्टैंड -5</string>
+  <string name="incident_brief">हादसा संक्षिप्त</string>
+  <string name="submit">प्रस्तुत</string>
+  <string name="language">भाषा: हिन्दी</string>
+  <string name="logout">लॉग आउट</string>
+  <string name="dummyText">लॉरेम इप्सम डोलर अमेट, कंसेटेटुर एडिपिसिंग एलीट, सेड डो आइज्मूड अस्थायी इंकिडीडंट यूट लैबर एट डोलोर मैग्ना सेड डो सेड अलिक्या।</string>
+  <string name="select_stand">स्टैंड-टू का चयन करें</string>
+  <string name="enter_incident_brief">घटना की संक्षिप्त जानकारी दें</string>
+  <string name="enter_action_token">कार्रवाई टोकन दर्ज करें</string>
+  <string name="save_draft">लिखित को सुरक्षित करो</string>
+  <string name="please_select_distric_first">कृपया पहले जिले का चयन करें</string>
+  <string name="enter_valid_passowrd">कृपया मान्य पासवर्ड दर्ज करें</string>
+  <string name="incident_date">हादसा दिनांक</string>
+  <string name="incident">घटना</string>
+  <string name="action_token">कार्रवाई टोकन</string>
+  <string name="success">सफलता</string>
+  <string name="message_successfully_sent">संदेश सफलतापूर्वक भेजा गया</string>
+  <string name="message_successfully_save">संदेश ड्राफ्ट में सुरक्षित रूप से सहेजें </string>
+  <string name="do_you_want_to_exit">क्या आप निश्चित हैं आपकी बाहर निकलने की इच्छा है ?</string>
+  <string name="confirm_exit">बाहर निकलने की पुष्टि करें</string>
+  <string name="message_log">संदेश लॉग</string>
+  <string name="exit">बाहर जाएं</string>
+</resources>
