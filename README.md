@@ -2,7 +2,7 @@
 
 ***You can Install and test latest Firebase Firestore DB app from below 👇***
 
-[![Firebase Firestore DB](https://img.shields.io/badge/News%20Post-Apk-brightgreen.svg?style=for-the-badge&logo=android)](https://github.com/webaddicted/NewsPost/blob/main/apk/newspost.apk)
+[![Firebase Firestore DB](https://img.shields.io/badge/Firebase%20-Firestore-brightgreen.svg?style=for-the-badge&logo=android)](https://github.com/webaddicted/FirebaseFirestore/blob/main/apk/fcm_firestore.apk)
 
 
 Base architecture already created in this repo. This repo contain following component :
@@ -20,18 +20,12 @@ Base architecture already created in this repo. This repo contain following comp
 
 ## Login Module
 
-<img src="https://github.com/webaddicted/NewsPost/raw/main/screenshot/login.jpg" height="500"> 
+<img src="https://github.com/webaddicted/FirebaseFirestore/raw/main/screenshot/login.jpg" height="500"> 
 
 
 ## Home Module
 
-<img src="https://github.com/webaddicted/NewsPost/raw/main/screenshot/home.jpg" height="500"> 
-
-
-## Post Module
-
-<img src="https://github.com/webaddicted/NewsPost/raw/main/screenshot/post.jpg" height="500"> 
-
+<img src="https://github.com/webaddicted/FirebaseFirestore/raw/main/screenshot/home.jpg" height="500"> 
 
 
 
