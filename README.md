@@ -9,6 +9,9 @@
 
 [![Firebase Firestore DB](https://img.shields.io/badge/News%20Post-Apk-brightgreen.svg?style=for-the-badge&logo=android)](https://github.com/webaddicted/NewsPost/blob/main/apk/newspost.apk)
 
+## GIF
+<img src="https://github.com/webaddicted/FirebaseFirestore/raw/main/screenshot/fun.webp" width="505">
+
 
 Base architecture already created in this repo. This repo contain following component :
 
