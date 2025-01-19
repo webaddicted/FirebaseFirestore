@@ -10,7 +10,6 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
-import com.etebarian.meowbottomnavigation.MeowBottomNavigation
 import com.google.firebase.messaging.FirebaseMessaging
 import com.nikvik.quickinfo.R
 import com.nikvik.quickinfo.databinding.ActivityHomeBinding
@@ -51,53 +50,53 @@ class HomeActivity : BaseActivity(R.layout.activity_home) {
 
     override fun onBindTo(binding: ViewDataBinding) {
         mBinding = binding as ActivityHomeBinding
-//        navigateScreen(NewsFrm.TAG)
         userInfo = preferenceMgr.getUserInfo()
-        bottomNav()
+        setupBottomNavigation()
     }
 
     override fun isNetworkConnected(isConnected: Boolean) {
     }
 
-    private fun bottomNav() {
-        mBinding.navBar.add(MeowBottomNavigation.Model(1, R.drawable.ic_msg_log))
-        mBinding.navBar.add(MeowBottomNavigation.Model(2, R.drawable.ic_compose))
-        mBinding.navBar.add(MeowBottomNavigation.Model(3, R.drawable.ic_draft))
-        mBinding.navBar.add(MeowBottomNavigation.Model(4, R.drawable.ic_settings))
-        mBinding.navBar.show(1)
+    private fun setupBottomNavigation() {
+        // Set initial fragment
         openFragment(MsgLogFrm.getInstance(Bundle()))
-        mBinding.navBar.setOnShowListener {
-            // YOUR CODES
-        }
-
-        mBinding.navBar.setOnClickMenuListener {
-            when (it.id) {
-                1 -> openFragment(MsgLogFrm.getInstance(Bundle()))
-                2 -> openFragment(ComposeFrm.getInstance(Bundle()))
-                3 -> openFragment(DraftFrm.getInstance(Bundle()))
-                4 -> openFragment(SettingFrm.getInstance(Bundle()))
+        
+        mBinding.bottomNavigation.setOnItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.nav_message_log -> {
+                    openFragment(MsgLogFrm.getInstance(Bundle()))
+                    true
+                }
+                R.id.nav_compose -> {
+                    openFragment(ComposeFrm.getInstance(Bundle()))
+                    true
+                }
+                R.id.nav_draft -> {
+                    openFragment(DraftFrm.getInstance(Bundle()))
+                    true
+                }
+                R.id.nav_settings -> {
+                    openFragment(SettingFrm.getInstance(Bundle()))
+                    true
+                }
+                else -> false
             }
         }
-//        mBinding.navBar.setOnReselectListener {
-//            // YOUR CODES
-//        }
     }
 
     fun openFragment(fragment: Fragment) {
         val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.container, fragment)
-//        transaction?.addToBackStack(null)
         transaction.commit()
     }
 
     fun openComposeFragment(draftInfo: MailRespo.DraftArray?) {
-        mBinding.navBar.show(2)
+        mBinding.bottomNavigation.selectedItemId = R.id.nav_compose
         val bundle = Bundle()
         bundle.putSerializable(ComposeFrm.DRAFT_RESPO, draftInfo)
         val composeFrm = ComposeFrm.getInstance(bundle)
         val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.container, composeFrm)
-//        transaction?.addToBackStack(null)
         transaction.commit()
     }
 
@@ -157,10 +156,8 @@ class HomeActivity : BaseActivity(R.layout.activity_home) {
         val jsonObjectRequest: JsonObjectRequest = object : JsonObjectRequest(FCM_API, notification,
             Response.Listener { response ->
                 Log.e("TAG", "onResponse: $response")
-//                Toast.makeText(activity, "onResponse: $response", Toast.LENGTH_LONG).show()
             },
             Response.ErrorListener {
-//                Toast.makeText(activity, "Request error", Toast.LENGTH_LONG).show()
                 Log.e("TAG", "onErrorResponse: Didn't work")
             }) {
             override fun getHeaders(): MutableMap<String, String> {
@@ -169,14 +166,6 @@ class HomeActivity : BaseActivity(R.layout.activity_home) {
                 params["Content-Type"] = contentType
                 return params
             }
-//            @get:Throws(AuthFailureError::class)
-//            val headers: Map<String, String>?
-//                get() {
-//                    val params: MutableMap<String, String> = HashMap()
-//                    params["Authorization"] = serverKey
-//                    params["Content-Type"] = contentType
-//                    return params
-//                }
         }
         MySing.getInstance(this)?.addToRequestQueue(jsonObjectRequest)
     }

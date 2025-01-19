@@ -12,25 +12,21 @@
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/nav_bar" />
+            android:layout_above="@+id/bottom_navigation" />
 
         <!--        <FrameLayout-->
         <!--            android:id="@+id/loader_container"-->
         <!--            android:layout_width="match_parent"-->
         <!--            android:layout_height="match_parent" />-->
-        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
-            android:id="@+id/nav_bar"
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            app:mbn_backgroundBottomColor="#ffffff"
-            app:mbn_circleColor="#ffffff"
-            app:mbn_countBackgroundColor="#ff6f00"
-            app:mbn_countTextColor="#ffffff"
-            app:mbn_defaultIconColor="#90a4ae"
-            app:mbn_rippleColor="#2f424242"
-            app:mbn_selectedIconColor="#3c415e"
-            app:mbn_shadowColor="#1f212121" />
+            android:background="@color/white"
+            app:itemIconTint="@color/bottom_nav_color"
+            app:itemTextColor="@color/bottom_nav_color"
+            app:menu="@menu/bottom_navigation_menu" />
 
         <FrameLayout
             android:id="@+id/info_container"

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_message_log"
+        android:icon="@drawable/ic_msg_log"
+        android:title="Messages" />
+    <item
+        android:id="@+id/nav_compose"
+        android:icon="@drawable/ic_compose"
+        android:title="Compose" />
+    <item
+        android:id="@+id/nav_draft"
+        android:icon="@drawable/ic_draft"
+        android:title="Drafts" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings" />
+</menu> 
